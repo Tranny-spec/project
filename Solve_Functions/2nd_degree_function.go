@@ -1,1 +1,1 @@
-package solve_2nd_degree_function
+package solve_functions
