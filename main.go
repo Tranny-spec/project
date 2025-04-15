@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 
-	firstDegreeEquation "github.com/Tranny-spec/project/Solve_Functions"
+	Solve_Functions "github.com/Tranny-spec/project/Solve_Functions"
 )
 
 func main() {
-	fmt.Println(firstDegreeEquation.SolveFirstEquation(100, 10))
+	fmt.Println(Solve_Functions.SolveFirstEquation(100, 10))
 }
