@@ -1,4 +1,4 @@
-package solve_function
+package solve_1st_degree_function
 
 import (
 	"math"
