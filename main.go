@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	firstDegreeEquation "github.com/Tranny-spec/project/blob/main/Solve_Functions"
+	firstDegreeEquation "github.com/Tranny-spec/project/Solve_Functions"
 )
 
 func main() {
