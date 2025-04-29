@@ -7,5 +7,5 @@ import (
 )
 
 func main() {
-	fmt.Println(solve_functions.SolveFirstEquation(3, 10))
+	fmt.Println(solve_functions.SolveFirstEquation(3, 7))
 }
