@@ -9,5 +9,5 @@ import (
 func main() {
 	fmt.Println(solve_functions.SolveFirstEquation(3, 7))
 	fmt.Println(solve_functions.SolveSecondEquation(2, 5, -10))
-	fmt.Println(solve_functions.SolveThirdEquation(2, 5, -10,-100))
+	fmt.Println(solve_functions.SolveThirdEquation(2, 5, -10, -100))
 }
