@@ -15,7 +15,6 @@ func SolveSecondEquation(a, b, c float32) (int, []float32) {
 
 		if delta < 0 {
 			solutions = 0
-			answers = append(answers, 0)
 		} else if delta == 0 {
 			solutions = 1
 
