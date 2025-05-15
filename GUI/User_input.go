@@ -21,7 +21,7 @@ import (
 	"fyne.io/fyne/v2/widget"
 
 	//Import functions to solve equations from Solve_Functions
-	solve_functions "github.com/Tranny-spec/project/Solve_Functions"
+	solveFunctions "github.com/Tranny-spec/project/Solve_Functions"
 )
 
 // Function to format the printed results
@@ -151,7 +151,7 @@ func ApplicationGUI() {
 			DrawLinearGraph(a, b, graphImageFile)
 
 			// Solve the linear equation.
-			solutions, answers := solve_functions.SolveLinearEquation(float32(a), float32(b))
+			solutions, answers := solveFunctions.SolveLinearEquation(float32(a), float32(b))
 
 			// Format the solutions for display
 			results = ShowAnswers(solutions, answers)
@@ -162,7 +162,7 @@ func ApplicationGUI() {
 			DrawQuadraticGraph(a, b, c, graphImageFile)
 
 			// Solve the quadratic equation
-			solutions, answers := solve_functions.SolveQuadraricEquation(float32(a), float32(b), float32(c))
+			solutions, answers := solveFunctions.SolveQuadraricEquation(float32(a), float32(b), float32(c))
 
 			// Format the solutions for display
 			results = ShowAnswers(solutions, answers)
@@ -172,7 +172,7 @@ func ApplicationGUI() {
 			DrawCubicGraph(a, b, c, d, graphImageFile)
 
 			// Solve the cubic equation.
-			solutions, answers := solve_functions.SolveCubicEquation(float32(a), float32(b), float32(c), float32(d))
+			solutions, answers := solveFunctions.SolveCubicEquation(float32(a), float32(b), float32(c), float32(d))
 
 			// Format the solutions for display.
 			results = ShowAnswers(solutions, answers)
