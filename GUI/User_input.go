@@ -47,7 +47,7 @@ func ShowAnswers(solutions int, answers []float32) string {
 	} else {
 		results = "Roots: \n"
 
-		// Iterate through each answer and concaternate to "results"
+		// Iterate through each answer and concatenate to "results"
 		for i := 0; i < solutions; i++ {
 			results += fmt.Sprintf("x%d = %f", i+1, answers[i])
 
@@ -75,25 +75,25 @@ func ApplicationGUI() {
 
 	// Create input fields for the first coefficient of the equation.
 	inputFirstCoefficient := widget.NewEntry()
-	inputFirstCoefficient.SetPlaceHolder("a") 
+	inputFirstCoefficient.SetPlaceHolder("a")
 
 	// Create input fields for the second coefficient of the equation.
 	inputSecondCoefficient := widget.NewEntry()
-	inputSecondCoefficient.SetPlaceHolder("b") 
+	inputSecondCoefficient.SetPlaceHolder("b")
 
 	// Create input fields for the third coefficient of the equation.
 	inputThirdCoefficient := widget.NewEntry()
-	inputThirdCoefficient.SetPlaceHolder("c") 
+	inputThirdCoefficient.SetPlaceHolder("c")
 
 	// Create input fields for the fourth coefficient of the equation.
 	inputFourthCoefficient := widget.NewEntry()
-	inputFourthCoefficient.SetPlaceHolder("d") 
+	inputFourthCoefficient.SetPlaceHolder("d")
 
 	// Create a menu to select the type of equation.
 	equationType := widget.NewSelect([]string{"Linear", "Quadratic", "Cubic"}, func(string) {})
-	
+
 	//Set Linear as Default
-	equationType.SetSelected("Linear") 
+	equationType.SetSelected("Linear")
 
 	// Create a label to display results.
 	output := widget.NewLabel("")

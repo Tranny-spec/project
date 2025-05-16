@@ -104,8 +104,8 @@ func DrawGraph(title string, equationFunction func(x float64) float64, graphImag
 func DrawLinearGraph(a, b float64, graphImage string) {
 	// Call DrawGraph with the linear equation details.
 	DrawGraph(
-		fmt.Sprintf("Linear equation: y = %gx + %g", a, b), // Graph title.
-		func(x float64) float64 { return a*x + b },         // Linear equation function.
+		fmt.Sprintf("Linear equation: y = %gx %+g", a, b), // Graph title.
+		func(x float64) float64 { return a*x + b },        // Linear equation function.
 		graphImage, // Filename for the graph image.
 	)
 }
@@ -118,8 +118,8 @@ func DrawLinearGraph(a, b float64, graphImage string) {
 func DrawQuadraticGraph(a, b, c float64, graphImage string) {
 	// Call drawGraph with the quadratic equation details.
 	DrawGraph(
-		fmt.Sprintf("Quadratic equation: y = %g*x^2 + %g*x + %g", a, b, c), // Graph title.
-		func(x float64) float64 { return a*x*x + b*x + c },                 // Quadratic equation function.
+		fmt.Sprintf("Quadratic equation: y = %g*x² %+g*x %+g", a, b, c), // Graph title.
+		func(x float64) float64 { return a*x*x + b*x + c },              // Quadratic equation function.
 		graphImage, // Filename for the graph image.
 	)
 }
@@ -133,8 +133,8 @@ func DrawQuadraticGraph(a, b, c float64, graphImage string) {
 func DrawCubicGraph(a, b, c, d float64, graphImage string) {
 	// Call DrawGraph with the cubic equation details.
 	DrawGraph(
-		fmt.Sprintf("Cubic equation: y = %g*x^3 + %g*x^2 + %g*x + %g", a, b, c, d), // Graph title.
-		func(x float64) float64 { return a*x*x*x + b*x*x + c*x + d },               // Cubic equation function.
+		fmt.Sprintf("Cubic equation: y = %g*x³ %+g*x² %+g*x %+g", a, b, c, d), // Graph title.
+		func(x float64) float64 { return a*x*x*x + b*x*x + c*x + d },          // Cubic equation function.
 		graphImage, // Filename for the graph image.
 	)
 }

@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-    // Call ApplicationGUI to start the function
+	// Call ApplicationGUI to start the function
 	GUI.ApplicationGUI()
 }
